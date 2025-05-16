@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="userbox.js"></script>
+    <script type="module" src="messageboard.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="introduction">
+                <h2>自我介紹</h2>
+                <p>不起眼的普通大學生，有點社恐。</p>
+                <p>甜黨、夜貓，另有部份朋友評價傲嬌。</p>
+                <p>喜歡聽ボカロ，入坑曲是 <span style="color: green;">深海少女</span>。</p>
+                <p>多企劃廚，身兼 <span style="color: red;">拉拉人</span>、<span style="color: orange;">邦邦人</span>、<span style="color: blue;">豆腐人</span>、<span style="color: purple;">製作人</span>、<span style="color: #00cc44;">主任</span>。</p>
+            </div>
+
+            <div class="user-frame">
+                <h2>用戶框</h2>
+                <div id="userbox-container">
+                    <div data-userbox 
+                        data-icon="https://via.placeholder.com/60" 
+                        data-description="該用戶已有4年零4個月零15日的萌百用戶史。"></div>
+
+                    <div data-userbox 
+                        data-icon="https://via.placeholder.com/60" 
+                        data-description="該用戶是一名優質編輯者。"></div>
+
+                    <div data-userbox 
+                        data-icon="https://via.placeholder.com/60" 
+                        data-description="該用戶愛吃火鍋底料。"></div>
+                </div>
+            </div>
+
+            <div class="message-board">
+                <h2>留言板</h2>
+                <!-- 留言表單 -->
+                <form id="message-form">
+                    <input id="nickname-input" type="text" placeholder="輸入您的暱稱" required />
+                    <input id="message-input" type="text" placeholder="輸入您的留言" required />
+                    <button type="submit">送出留言</button>
+                </form>
+                <!-- 留言列表 -->
+                <ul id="message-list"></ul>
+            </div>
+        </div>
+
+        <div class="profile-header">
+            <div class="profile-picture">
+                <img src="https://via.placeholder.com/150" alt="Profile Picture">
+            </div>
+            <div class="info">
+                <h1>快樂拉拉人</h1>
+                <div class="stats">
+                    <span>頁面: <b>150</b></span>
+                    <span>更改: <b>897</b></span>
+                    <span>分數: <b>205</b></span>
+                </div>
+                <div class="basic-info">
+                    <p>本名: 灧 / 澤伍</p>
+                    <p>性別: 男</p>
+                    <p>生日: 5月12日 (21歲)</p>
+                    <p>愛好: 跨媒體企劃、遊戲</p>
+                    <p>萌點: 社恐、傲嬌、強迫症</p>
+                    <p>所屬: 世界計畫編輯組</p>
+                    <p>狀態: <span style="color: blue;">忙碌</span></p>
+                </div>
+                <div class="bilibili">
+                    <img src="https://via.placeholder.com/20" alt="Bilibili Logo">
+                    噗噗噗噗
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

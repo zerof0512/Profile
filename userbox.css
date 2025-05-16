@@ -1,0 +1,60 @@
+/* 限定 userbox 的作用域 */
+#userbox-container .userbox {
+    display: table; /* 使用表格布局 */
+    width: calc(33.33% - 20px); /* 每行三個，均分剩餘空間 */
+    margin: 0; /* 去掉多餘外邊距 */
+    border: 1px solid rgba(127, 127, 127, 0.2); /* 邊框 */
+    border-radius: 10px; /* 圓角 */
+    box-shadow: 2px 2px 5px rgba(127, 127, 127, 0.4); /* 陰影 */
+    overflow: hidden; /* 防止內容溢出 */
+    height: 70px; /* 固定高度 */
+    background: #ffffff; /* 白色背景 */
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+#userbox-container .userbox:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 10px rgba(127, 127, 127, 0.6); /* 增強陰影效果 */
+}
+
+/* 左側圖標區域 */
+#userbox-container .userbox th {
+    width: 70px; /* 固定寬度 */
+    height: 70px; /* 固定高度 */
+    padding: 0;
+    background-color: rgba(240, 240, 240, 0.8); /* 淡灰背景 */
+    border-right: 1px solid rgba(127, 127, 127, 0.2); /* 添加右邊框 */
+    vertical-align: middle; /* 垂直居中 */
+}
+
+#userbox-container .userbox th > div {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#userbox-container .userbox th > div > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* 右側文字區域 */
+#userbox-container .userbox td {
+    padding: 10px;
+    vertical-align: middle; /* 垂直居中 */
+    font-size: 14px;
+    color: #333; /* 深灰色文字 */
+    text-align: left; /* 左對齊文字 */
+    line-height: 1.4;
+}
+
+/* 父容器 */
+#userbox-container {
+    display: flex;
+    flex-wrap: wrap; /* 允許換行 */
+    gap: 20px; /* 控制用戶框之間的間距 */
+    justify-content: center; /* 將用戶框整體置中 */
+}
